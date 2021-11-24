@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico">
+    <link rel="stylesheet" href="../static/css/smg-font.css">
+    <script src="../static/js/echarts.min.js"></script>
+    <title>RaspPi AC Remote Control</title>
+</head>
+
+<body>
+    <div class="top">
+        <br><br>
+        <div class="line-dec"></div>
+        <h2>Current Air Conditioner Temperature</h2>
+        <br>
+        <h7>{{Degree}}°C</h7>
+        <table>
+            <tr>
+                <td>
+                    <div class="white-border-button">
+                        <a href="/IR_ON">Switch: On</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="white-border-button">
+                        <a href="/IR_OFF">Switch: Off</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="white-border-button">
+                        <a href="/IR_UP">Temperature -- Up</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="white-border-button">
+                        <a href="/IR_DOWN">Temperature -- Down</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h2>Real-time Room Monitoring</h2>
+        <br>
+        <h3>Current Temperature: {{Temperature}}°C</h3>
+        <br>
+        <h3>Current Humidity: {{Wet}}%</h3>
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; 2021 Jun</p>
+    </footer>
+</body>
+
+</html>
